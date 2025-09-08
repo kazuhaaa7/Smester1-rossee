@@ -1,12 +1,17 @@
-# print('Tugas Praktikum Pertemuan 03 \n ')
-# print('=' * 8 ,"No .1", "=" * 8)
-# ebuahString = "glegandaloblkasf" 
+print('Tugas Praktikum Pertemuan 03 \n ')
+
+
+print('=' * 8 ,"No .1", "=" * 8)
+
+ebuahString = "glegandaloblkasf" 
 # #  output = flag 
 
-# print(ebuahString)
-# print(ebuahString[::-4], '\n')
+print(ebuahString)
+print(ebuahString[::-4], '\n')
+
 
 print('=' * 8 ,"No .2", "=" * 8)
+
 a = []
 b = [3,6,9,10,8,5,7]
 c = [1,3,5,7,2,4,6,8]
@@ -34,12 +39,21 @@ hai = list(set(a))
 hai.sort()
 # print(hai, '\n )
 
+
 print('=' * 8 ,"No .3", "=" * 8)
+
 data_Asprak = ['sebuah adit', 'king kholis', 'paduka wildan', 'maharaja fahmi']
-asprak = []
-for a in data_Asprak:
-    asprak.append (a[:: -1])
-print(asprak)
+data_Asprak.reverse()
+print(str(data_Asprak)[::-1] )
+
+
+
+
+
+# asprak = []
+# for a in data_Asprak:
+#     asprak.append (a[:: -1])
+# print(asprak)
 # format
 # create new empty variable
 # loop tiap elemen (bisa for, while)
