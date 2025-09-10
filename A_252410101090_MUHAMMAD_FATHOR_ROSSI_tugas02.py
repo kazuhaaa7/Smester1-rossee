@@ -42,10 +42,13 @@ hai.sort()
 
 print('=' * 8 ,"No .3", "=" * 8)
 
-data_Asprak = ['sebuah adit', 'king kholis', 'paduka wildan', 'maharaja fahmi']
-data_Asprak.reverse()
-print(str(data_Asprak)[::-1] )
+# data_Asprak = ['sebuah adit', 'king kholis', 'paduka wildan', 'maharaja fahmi']
+# data_Asprak.reverse()
+# print(str(data_Asprak)[::-1] )
 
+data_Asprak = ['sebuah adit', 'king kholis', 'paduka wildan', 'maharaja fahmi']
+data_Asprak1 = data_Asprak[0] [:: -1], data_Asprak[1] [:: -1], data_Asprak[2][:: -1]
+print(data_Asprak1) 
 
 
 
