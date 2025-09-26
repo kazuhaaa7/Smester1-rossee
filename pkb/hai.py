@@ -42,4 +42,3 @@ plt.plot(x, model.predict(x), color= 'brown')
 plt.title('Linear Regression')
 plt.xlabel('Luas kamar')
 plt.ylabel('Harga sewa')
-
