@@ -1,4 +1,4 @@
-# PERLU REVISIIII
+# # PERLU REVISIIII
 # # Program (1)
 # for i in range(1, 50, 2):
 #     print(f'{i} ' '', end= '' )    
@@ -12,15 +12,15 @@
 # for i in range (1,angka + 1 ):
 #     indeks *= i
 # print(indeks)
-# # akan mendeteksi dari angka 1 hingga angka yg sudah diinputkan. lalu saat iterasi var indeks di kali dengan var i
+# akan mendeteksi dari angka 1 hingga angka yg sudah diinputkan. lalu saat iterasi var indeks di kali dengan var i
 
-# # while i <= angka:
-# #     indeks *= i
-# #     i +=1
-# # print(indeks)
+# while i <= angka:
+#     indeks *= i
+#     i +=1
+# print(indeks)
 
 # # program 3
-# angka = int(input("Masukkan angka "))
+# angka = int(input("Masukkan angka: "))
 # for i in range(1, angka + 1):
 #     print("*" * i)
 
