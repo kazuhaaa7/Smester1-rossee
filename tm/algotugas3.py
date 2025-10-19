@@ -1,39 +1,39 @@
-# # PERLU REVISIIII
-# # Program (1)
-# for i in range(1, 50, 2):
-#     print(f'{i} ' '', end= '' )    
-#     # akan mendeteksi angka dari 1 hingga 50, tetapi dengan longkap 2
+# PERLU REVISIIII
+# Program (1)
+for i in range(1, 50, 2):
+    print(f'{i} ' '', end= '' )    
+    # akan mendeteksi angka dari 1 hingga 50, tetapi dengan longkap 2
 
-# # Program (2)
-# angka = int(input("Masukkan angka:"))
-# indeks = 1
-# i = 1
+# Program (2)
+angka = int(input("Masukkan angka:"))
+indeks = 1
+i = 1
 
-# for i in range (1,angka + 1 ):
-#     indeks *= i
-# print(indeks)
+for i in range (1,angka + 1 ):
+    indeks *= i
+print(indeks)
 # akan mendeteksi dari angka 1 hingga angka yg sudah diinputkan. lalu saat iterasi var indeks di kali dengan var i
 
-# while i <= angka:
-#     indeks *= i
-#     i +=1
-# print(indeks)
+while i <= angka:
+    indeks *= i
+    i +=1
+print(indeks)
 
-# # program 3
-# angka = int(input("Masukkan angka: "))
-# for i in range(1, angka + 1):
-#     print("*" * i)
+# program 3
+angka = int(input("Masukkan angka: "))
+for i in range(1, angka + 1):
+    print("*" * i)
 
 
-# for i in range (angka, 0, -1):
-#     print("*" * i)
+for i in range (angka, 0, -1):
+    print("*" * i)
 
-# tinggi = int(input("Masukkan tinggi segitiga: "))
+tinggi = int(input("Masukkan tinggi segitiga: "))
 
-# for i in range(tinggi):
-#     spasi = " " * (tinggi - i - 1)
-#     bintang = "*" * (2 * i + 1)
-#     print(spasi + bintang + spasi)
+for i in range(tinggi):
+    spasi = " " * (tinggi - i - 1)
+    bintang = "*" * (2 * i + 1)
+    print(spasi + bintang + spasi)
 
 # # program (4)
 
@@ -65,11 +65,11 @@ rata = int(angkamasuk1 / angka)
 print(rata)
 
 
-# angka = int(input("Masukkan bebrapa angka: "))
-# indeks = 0
+angka = int(input("Masukkan bebrapa angka: "))
+indeks = 0
 
-# for i in range (1 , angka+ 1) :
-#     angkamasuk = int(input(f"Masukkan bil"))
-#     indeks = indeks + angkamasuk
-# rata = int(indeks / angka)
-# print(rata)
+for i in range (1 , angka+ 1) :
+    angkamasuk = int(input(f"Masukkan bil"))
+    indeks = indeks + angkamasuk
+rata = int(indeks / angka)
+print(rata)
