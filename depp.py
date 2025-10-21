@@ -1,3 +1,7 @@
+# terlalau bertele tele, memakai banyak variabel, padahal fungsinya sma cuma penempatanny aja yg berbeda.
+
+
+# KEMBANGKAN LAGI, IN UDAH TERLALU JAUH DAN INTERAKLTIF
 # ===========================
 # PROGRAM ONLINE SHOP KHOLIF
 # ===========================
@@ -48,32 +52,52 @@ for i in range(1, banyak_barang_input + 1):
     print(f"✅ {sales} sebanyak {jumlah_input} buah berhasil ditambahkan ke keranjang.")
 
     # LOOP AGAR BISA MENAMBAH LAGI SETELAH UDAHD MENENTUKAN JUMLAH BARANG YG INGIN DIBELI
-    while True:
-        nextStep = input("Apa ada barang yg ingin ditambahkan ke pembelanjaan lagi? [y]/[t]: ").lower()
-        if nextStep == "y":
-            banyak_barang_input_tambahan = int(input("\nBerapa banyak jenis barang yang ingin kamu beli lagi? "))
+while True:
+    nextStep = input("Apa ada barang yg ingin ditambahkan ke pembelanjaan lagi? [y]/[t]: ").lower()
+    if nextStep == "y" or nextStep != "t":
+        banyak_barang_input_tambahan = int(input("\nBerapa banyak jenis barang yang ingin kamu beli lagi? "))
+
+        for i in range(1, banyak_barang_input + 1):
+            print(f"\nBarang ke-{i}:")
+            sales = input("Masukkan nama produk: ").title()
+
+        if sales not in produk:
+            print("TETOTT... Produk tidak ada di daftar. Coba lagi.")
+            continue
             
-            if banyak_barang_input_tambahan <= 0:
-                print("Jumlah barang minimal 1!")
-                continue
-            break  # keluar kalau input valid
+        elif banyak_barang_input_tambahan <= 0:
+            print("Jumlah barang minimal 1!")
+            continue
+        break  # keluar kalau input valid
+# error
+    elif nextStep == "t":
+        print("baik program akan kami tutu")
+        continue
+    # error
+    print("-" * 35)
+    print(f"Subtotal : Rp{subsum}")
+    print(f"PPN (12%): Rp{int(finalpajak):,}")
+    print(f"Ongkir   : Rp{ongkir:,}")
+    print("-" * 35)
+    print(f"Total Bayar: Rp{int(bosssum):,}")
+    print("Terima kasih telah berbelanja di toko Kholish! ")
 
 # -------------------------------
 # LOOP UNTUK MEMASUKKAN TIAP BARANG LAGEEE
 # -------------------------------
 
-    for x in range(1, banyak_barang_input_tambahan + 1):
-        print(f"\nBarang ke-{i}:")
-        nextStep = input("Masukkan nama produk: ").title()
+for x in range(1, banyak_barang_input_tambahan + 1):
+    print(f"\nBarang ke-{i}:")
+    nextStep = input("Masukkan nama produk: ").title()
 
 
-        if nextStep not in produk:
-            print("TETOTT... Produk tidak ada di daftar. Coba lagi.")
-            continue
-        jumlah_input_tambahan = int(input("Masukkan jumlah produk yang ingin dibeli lagi: "))
-        subsubtotal_tambahan = produk[sales] * jumlah_input
-        keranjang.append((nextStep, jumlah_input_tambahan, subsubtotal_tambahan))
-        print(f"✅ {nextStep} sebanyak {jumlah_input_tambahan} buah berhasil ditambahkan ke keranjang.")
+    if nextStep not in produk:
+        print("TETOTT... Produk tidak ada di daftar. Coba lagi.")
+        continue
+    jumlah_input_tambahan = int(input("Masukkan jumlah produk yang ingin dibeli lagi: "))
+    subsubtotal_tambahan = produk[sales] * jumlah_input
+    keranjang.append((nextStep, jumlah_input_tambahan, subsubtotal_tambahan))
+    print(f"✅ {nextStep} sebanyak {jumlah_input_tambahan} buah berhasil ditambahkan ke keranjang.")
 
 
 # -------------------------------
@@ -89,6 +113,7 @@ if keranjang:
     
 
     #LOOP AWAL 
+    # error
     for i, (nama_produk, jumlah, subsubtotal) in range(1, keranjang + 1):
         print(f"{i}. {nama_produk} x {jumlah} = Rp.{subsubtotal:,}")
         subtotal += subsubtotal
