@@ -38,7 +38,7 @@ ppn = int(subtotal * 0.12)
 totalakhir = subtotal + ppn + ongir
 
 # tampilkan struk
-print("\n", "=" * 6, "TRUK PEMBELIAN", "=" * 6)
+print("\n", "=" * 6, "STRUK BELANJA", "=" * 6)
 for nama, jml, tot in keranjang:
     print(f"{nama} x{jml}: Rp{tot}")
 
@@ -48,13 +48,12 @@ Subtotal       : Rp{subtotal}
 PPN (12%)      : Rp{ppn}
 Ongkir         : Rp{ongir}
 --------------------------
-Total Akhir    : Rp{totalakhir}
+Total Bayar    : Rp{totalakhir}
 
 Terima kasih telah berbelanja di toko Kholish!
 """)
 
 #no 2
-# aku kira nanti bakal  menghitung sesuai keinginan user, jadi nanti user input hingga beberaoa hari ke depan lalu user input kembali "mau liha nominal saldo tabungan di day nabung ke ..." jadi gitu.
 
 daftar = int(input("Masukkan nominal yg akan ditabung: "))
 
@@ -75,7 +74,7 @@ while True:
     sumnom += daftar
     nominal.append(sumnom)
 
-print(sumnom)
+print(nominal)
 
 # no 3
 manystudent = int(input("Masukkan jumlah murid yg ingin diolah datanya: "))
@@ -88,12 +87,13 @@ while x < manystudent:
     fisika = int(input("Masukkan niai FISIKA: "))
     kimia = int(input("Masukkan niai KIMIA: "))
     bio = int(input("Masukkan niai BIOLOGI: "))
-    x +=1 
+    x +=1
     rata = float((mtk + kimia+ fisika + bio) / 4)
     nama.append(name)
     finalrata.append(rata)
     
-print("=" * 8, "HASIL RATA-RATA NILAI", "=" * 8) 
+print("=" * 8, "PROGRAM SISTEM NILAI RAPOR", "=" * 8) 
+print(f"Masukkan jumla siswa: {manystudent} ")
 for i in range( 1,manystudent + 1):
     print(f"""
 Masukkan data ke-{i}
@@ -102,6 +102,8 @@ Mapel MTK: {mtk}
 Mapel FISIKA: {fisika}
 Mapel KIMIA: {kimia}
 Mapel BIOLOGI: {bio}
-Rata: {finalrata[i - 1]}
-\n
 """)
+print("=" * 8, "PROGRAM SISTEM NILAI RAPOR", "=" * 8) 
+for i in range(1, manystudent + 1):
+    print(f"{nama[i - 1]}: {finalrata[i - 1]}")
+    
