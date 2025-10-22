@@ -83,10 +83,10 @@ nama = []
 finalrata = []
 while x < manystudent:
     name = input("Masukkan nama yg ingin diolah datanya: ")
-    mtk = int(input("Masukkan niai MTK: "))
-    fisika = int(input("Masukkan niai FISIKA: "))
-    kimia = int(input("Masukkan niai KIMIA: "))
-    bio = int(input("Masukkan niai BIOLOGI: "))
+    mtk = int(input("Masukkan niai MTK (0-100): "))
+    fisika = int(input("Masukkan niai FISIKA (0-100): "))
+    kimia = int(input("Masukkan niai KIMIA (0-100): "))
+    bio = int(input("Masukkan niai BIOLOGI (0-100): "))
     x +=1
     rata = float((mtk + kimia+ fisika + bio) / 4)
     nama.append(name)
