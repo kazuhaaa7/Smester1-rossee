@@ -11,7 +11,7 @@
 
 # penggabungan string atau atribut tambahan string:
 # 1. +, ex= var1 + var2
-# 2. .join(), memberikan atribut tambahan pd string bisa berupa spasi, koma, dll
+# 2. "".join(), memberikan atribut tambahan pd string bisa berupa spasi, koma, dll
 # 3.format f string
 
 # .count() => digunakan untuk menghitung berapa kali suatu nilai muncul di dalam list, string, atau tuple.
@@ -26,6 +26,10 @@
 # 7. .reverse() => untuk mmebalik urutan value
 # 8. .clear() => menghapus semua value 
 # 9. .sort() => untuk mengurutkan abjad awal kata value
+# 10. set() => tipe data koleksi seperti list atau tuple, tapi:
+# Tidak menyimpan urutan
+# Tidak boleh ada elemen ganda (otomatis unik)
+# Bisa melakukan operasi himpunan (union, intersection, difference)
 
 # akses list:
 # 1. <namavar>[]
@@ -56,10 +60,12 @@
 # 4. .title()
 # 5. .isalnum() => mengecek string apakah hanya terdiri dari alfanumerik yaitu karakter dan angka.
 # 6. .isdigit() => Untuk mengecek string apakah hanya terdiri dari digit, yaitu angka 0 - 9.
-# 7. .rjust() => Untuk meratakan string ke kanan dan menambah spasi di sebelah kiri.
-# 8. .ljust() => Kebalikan dari rjust
-# 9. ord(() => Untuk mengubah sebuah karakter menjadi nilai numerik yang merepresentasikannya (ASCII Number).
-# 10. chr() =>  Digunakan untuk mengonversi nilai integer (yang mewakili kode Unicode) menjadi karakter string tunggal.
+# 7. .islower()
+# 8. .isupper()
+# 9. .rjust() => Untuk meratakan string ke kanan dan menambah spasi di sebelah kiri.
+# 10. .ljust() => Kebalikan dari rjust
+# 11. ord(() => Untuk mengubah sebuah karakter menjadi nilai numerik yang merepresentasikannya (ASCII Number).
+# 12. chr() =>  Digunakan untuk mengonversi nilai integer (yang mewakili kode Unicode) menjadi karakter string tunggal.
 
 # operator NOR(not or)
 # 1. not (x or y)
@@ -90,4 +96,19 @@
 # 1. break => akan memberhentikan program
 # 2. continue => akan men-skip program
 
-# list comrehension: cara singkat dan efisien untuk membuat list baru dari list (atau iterable) lain dengan menuliskan ekspresi dalam satu baris kode
+# list comprehension: cara singkat dan efisien untuk membuat list baru dari list (atau iterable) lain dengan menuliskan ekspresi dalam satu baris kode
+
+### FUNGSI
+# Parameter => nilai yang dikirimkan ke dalam fungsi saat dipanggil — seperti input data yang ingin kamu olah. dan bisa diisi dgn argumen bebas.
+# return => ntuk mengembalikan hasil ke pemanggil fungsi.
+# Tanpa return, fungsi tidak mengembalikan apa pun (secara default nilainya None).
+# Scope => menentukan di mana variabel bisa digunakan.
+# Ada dua jenis utama: Global dan Local
+# Global bisa diakses di seluruh program, di luar fungsi
+# Local hanya bisa diaksss lewat funcion aja, var diletakkan atau dideklarasikan di alm pyhton.
+# Lambda => cara singkat untuk menulis fungsi sederhana — biasanya hanya satu baris.
+# bentuk umum => <var> = lambda parameter: ekspresi
+# bisa digunakan di fungsi:
+# map() → menerapkan fungsi ke setiap elemen list
+# filter() → menyaring data dengan kondisi tertentu
+# sorted() → mengurutkan berdasarkan kriteria tertentu
