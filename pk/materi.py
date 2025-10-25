@@ -14,8 +14,6 @@
 # 2. "".join(), memberikan atribut tambahan pd string bisa berupa spasi, koma, dll
 # 3.format f string
 
-# .count() => digunakan untuk menghitung berapa kali suatu nilai muncul di dalam list, string, atau tuple.
-
 # operasi data list:
 # 1. .append() => menambah suatu value di indeks paling akhir
 # 2. .insert() => menambah suatu value dan bisa diletakkan di mana aja
@@ -30,6 +28,7 @@
 # Tidak menyimpan urutan
 # Tidak boleh ada elemen ganda (otomatis unik)
 # Bisa melakukan operasi himpunan (union, intersection, difference)
+# 11. # <nm var>.count(<value yg ingin dihitung keberadaanya>) => digunakan untuk menghitung berapa kali suatu nilai muncul di dalam list, string, atau tuple.
 
 # akses list:
 # 1. <namavar>[]
@@ -112,3 +111,26 @@
 # map() → menerapkan fungsi ke setiap elemen list
 # filter() → menyaring data dengan kondisi tertentu
 # sorted() → mengurutkan berdasarkan kriteria tertentu
+
+### COMPREHENSION DAN GENERATOR
+# List comprehension adalah cara singkat untuk membuat list baru dari data lain (seperti list, range, string, dll), hanya dalam satu baris kode.
+# contoh format => <nam var> = [ekspresi | for item in iterable | if kondisi]
+# Generator mirip dengan list comprehension, tapi lebih hemat memori
+# Bedanya:
+# List comprehension → menyimpan semua hasil di memori.
+# Generator → menghasilkan satu per satu (lazy) saat dibutuhkan. => outpunya berupa generator object. klo mau periksa valuenya, coba pake looping
+
+### EROR HANDLING(try, except)
+# Error handling itu cara Python menangani kesalahan saat program dijalankan.
+# Biasanya, kalau ada error (misalnya salah bagi angka dengan nol, atau input yang bukan angka), program langsung berhenti total dan keluar pesan merah panjang.
+# Nah, biar program nggak berhenti mendadak, kita bisa menangkap error-nya pakai try dan except.
+# ada 2 blok tmabahn selain try, except (opsional):
+# try:
+#     # coba jalankan | Tempat kode yang bisa bikin error
+#except:
+#     # kalau error | Tangani kalau error terjadi
+# else:
+#     # kalau TIDAK error | Jalan kalau tidak error
+# finally:
+#     # akan jalan SELALU (error atau nggak) | bakal Selalu jalan meskipun (error atau tidak), 
+# jdi klo mau pake blok kode else: di blok kode try: ga usah di kasi print atau cetak hasil apapun ketika programnya tdk error
