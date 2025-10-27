@@ -11,8 +11,8 @@
 
 # penggabungan string atau atribut tambahan string:
 # 1. +, ex= var1 + var2
-# 2. "".join(), memberikan atribut tambahan pd string bisa berupa spasi, koma, dll
-# 3.format f string
+# 2. "".join(), memberikan atribut tambahan pd STRING bisa berupa spasi, koma, dll
+# 3.format f string, HANYA BISA DI TERPKAN APABILA STYPE STRING
 
 # operasi data list:
 # 1. .append() => menambah suatu value di indeks paling akhir
@@ -28,6 +28,7 @@
 # Tidak menyimpan urutan
 # Tidak boleh ada elemen ganda (otomatis unik)
 # Bisa melakukan operasi himpunan (union, intersection, difference)
+# otput: data bertype set
 # 11. # <nm var>.count(<value yg ingin dihitung keberadaanya>) => digunakan untuk menghitung berapa kali suatu nilai muncul di dalam list, string, atau tuple.
 
 # akses list:
@@ -108,9 +109,10 @@
 # Lambda => cara singkat untuk menulis fungsi sederhana — biasanya hanya satu baris.
 # bentuk umum => <var> = lambda parameter: ekspresi
 # bisa digunakan di fungsi:
-# map() → menerapkan fungsi ke setiap elemen list
+# map() → fungsi yg menerapkan fungsi ke setiap elemen list. sepahamku, fungsi ini bisa melakukan hal yg tidak biasa, contoh klo ada value yg bertype int lalu kita masukkan ke fungsi yg khsusus type str itu bakalab error, jadi solusinya apabila itu terjadi bisa pake map(). at least memiliki 2 argument
 # filter() → menyaring data dengan kondisi tertentu
 # sorted() → mengurutkan berdasarkan kriteria tertentu
+# any() itu untuk mengecek apakah ADA minimal SATU elemen dalam iterable yang bernilai True.
 
 ### COMPREHENSION DAN GENERATOR
 # List comprehension adalah cara singkat untuk membuat list baru dari data lain (seperti list, range, string, dll), hanya dalam satu baris kode.
