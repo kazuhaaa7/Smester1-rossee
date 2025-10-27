@@ -113,6 +113,7 @@
 # filter() → menyaring data dengan kondisi tertentu
 # sorted() → mengurutkan berdasarkan kriteria tertentu
 # any() itu untuk mengecek apakah ADA minimal SATU elemen dalam iterable yang bernilai True.
+# sum() adalah built-in function dalam Python yang digunakan untuk menjumlahkan semua elemen dalam sebuah iterable (seperti list, tuple, dll).
 
 ### COMPREHENSION DAN GENERATOR
 # List comprehension adalah cara singkat untuk membuat list baru dari data lain (seperti list, range, string, dll), hanya dalam satu baris kode.
