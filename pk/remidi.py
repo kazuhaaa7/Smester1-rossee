@@ -23,75 +23,91 @@
 #         ntotal += harga
 #     print(ntotal)
 #     break
+# ntotal = 0
+# harga = [12000, 8000.5, 15000]
+# while True:
+#     for i in range(4):
+#         i += 1
+#     hargatotal = sum(harga)
+#     print("Total belanja :", float(hargatotal))
+#     break
+# ==================
 # yg diuplload remidi
-ntotal = 0
 harga = [12000, 8000.5, 15000]
-while True:
-    for i in range(4):
-        i += 1
-    hargatotal = sum(harga)
-    print("Total belanja :", float(hargatotal))
-    break
-
+ntotal = 0
+for i in range(len(harga)):
+    ntotal += harga[i]
+print("Total belanja :", float(ntotal))
 # ===================================================================================
 
 # no 2/ error, harus menggubaan looping
-daftar = ['RotiNaga', 'SupElf', 'RotiNaga', 'SupElf', 'RotiNaga', 'JusPhoenix']
-palingMenu = max(daftar, key=daftar.count)
-print(" ".join(daftar))
-print(palingMenu)
+# daftar = ['RotiNaga', 'SupElf', 'RotiNaga', 'SupElf', 'RotiNaga', 'JusPhoenix']
+# palingMenu = max(daftar, key=daftar.count)
+# print(" ".join(daftar))
+# print(palingMenu)
 
-# ==============
-# solusi menggunakan loop dan dict sbg tampungan
-# ==============
+# # ==============
+# # solusi menggunakan loop dan dict sbg tampungan
+# # ==============
 
-daftar = ['RotiNaga', 'SupElf', 'RotiNaga', 'SupElf', 'RotiNaga', 'JusPhoenix']
-# Buat dictionary kosong untuk menyimpan jumlah tiap item
-hitung = {}
+# daftar = ['RotiNaga', 'SupElf', 'RotiNaga', 'SupElf', 'RotiNaga', 'JusPhoenix']
+# # Buat dictionary kosong untuk menyimpan jumlah tiap item
+# hitung = {}
 
-# Looping untuk menghitung kemunculan
-for item in daftar:
-# program akan periksa satu per satu. 
-    if item in hitung:
-        hitung[item] += 1
-    else:
-        hitung[item] = 1
-# Kalau nama menu sudah ada di var hitung, tambahkan jumlahnya (+1).
-# Kalau belum ada, buat entri baru dengan nilai 1.
+# # Looping untuk menghitung kemunculan
+# for item in daftar:
+# # program akan periksa satu per satu. 
+#     if item in hitung:
+#         hitung[item] += 1
+#     else:
+#         hitung[item] = 1
+# # Kalau nama menu sudah ada di var hitung, tambahkan jumlahnya (+1).
+# # Kalau belum ada, buat entri baru dengan nilai 1.
 
-# Sekarang cari item dengan jumlah terbanyak
-palingMenu = None #karna blm tau menu apa yg sering digunakan, bakalan ditimpa setelah diiterasi
-jumlahTerbanyak = 0
-# Awalnya, belum tahu menu mana yang paling sering, jadi diset kosong dulu (None)
+# # Sekarang cari item dengan jumlah terbanyak
+# palingMenu = None #karna blm tau menu apa yg sering digunakan, bakalan ditimpa setelah diiterasi
+# jumlahTerbanyak = 0
+# # Awalnya, belum tahu menu mana yang paling sering, jadi diset kosong dulu (None)
 
-for item, jumlah in hitung.items():
-    if jumlah > jumlahTerbanyak:
-        jumlahTerbanyak = jumlah
-        palingMenu = item
+# for item, jumlah in hitung.items():
+#     if jumlah > jumlahTerbanyak:
+#         jumlahTerbanyak = jumlah
+#         palingMenu = item
 
-# Cetak hasil
-print(" ".join(daftar))
-print(palingMenu)
+# # Cetak hasil
+# print(" ".join(daftar))
+# print(palingMenu)
 
 # ================
 # solusi menggunakan .count dan set()
 # ================
+# daftar = ['RotiNaga', 'SupElf', 'RotiNaga', 'SupElf', 'RotiNaga', 'JusPhoenix']
+
+# palingMenu = "" # bisa diganti "None"
+# jumlahTerbanyak = 0
+
+# for item in set(daftar):  # set() biar tiap item unik
+# # set(daftar) akan menghapus duplikat dari daftar.
+#     if daftar.count(item) > jumlahTerbanyak:
+#     # .count(x) digunakan untuk menghitung berapa kali suatu nilai x muncul di dalam list.
+#         jumlahTerbanyak = daftar.count(item)
+#         palingMenu = item
+
+# print(" ".join(daftar))
+# print(palingMenu)
+# ===================
 # yg diupload remidi
-daftar = ['RotiNaga', 'SupElf', 'RotiNaga', 'SupElf', 'RotiNaga', 'JusPhoenix']
+daftar = ['Roti Naga', 'Sup Elf', 'Roti Naga', 'Sup Elf', 'Roti Naga', 'Jus Phoenix']
 
-palingMenu = "" # bisa diganti "None"
-jumlahTerbanyak = 0
+palingMenu = ""
+jumlahTerbanyak = 0 
 
-for item in set(daftar):  # set() biar tiap item unik
-# set(daftar) akan menghapus duplikat dari daftar.
+for item in set(daftar): 
     if daftar.count(item) > jumlahTerbanyak:
-    # .count(x) digunakan untuk menghitung berapa kali suatu nilai x muncul di dalam list.
         jumlahTerbanyak = daftar.count(item)
         palingMenu = item
-
-print(" ".join(daftar))
-print(palingMenu)
-
+        x = "".join(palingMenu.split(" ")) #split() tanpa parameter memisahkan string berdasarkan spasi, "".join() menggabungkan elemen list menjadi string
+print(x)
 
 # ===================================================================================
 

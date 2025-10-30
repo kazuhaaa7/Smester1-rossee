@@ -114,6 +114,10 @@
 # sorted() → mengurutkan berdasarkan kriteria tertentu
 # any() itu untuk mengecek apakah ADA minimal SATU elemen dalam iterable yang bernilai True.
 # sum() adalah built-in function dalam Python yang digunakan untuk menjumlahkan semua elemen dalam sebuah iterable (seperti list, tuple, dll).
+# len() adalah fungsi built-in Python yang digunakan untuk menghitung panjang atau jumlah elemen dari sebuah objek. => target: data y typenya list, str, dict. selain int dan float. 
+# range() adalah fungsi yang menghasilkan urutan angka yang biasa digunakan untuk perulangan.target: int
+# kombinasi range(len(<var yg valuenya bertype list, str, dict>))
+# .replace() => digunakan untuk mengganti (replace) suatu teks lama dengan teks baru dalam string.
 
 ### COMPREHENSION DAN GENERATOR
 # List comprehension adalah cara singkat untuk membuat list baru dari data lain (seperti list, range, string, dll), hanya dalam satu baris kode.

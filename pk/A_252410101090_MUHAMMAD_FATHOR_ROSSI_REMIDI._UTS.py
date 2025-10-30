@@ -1,17 +1,14 @@
 # ===================================================================================
 # no 1
-ntotal = 0
 harga = [12000, 8000.5, 15000]
-while True:
-    for i in range(4):
-        i += 1
-    hargatotal = sum(harga)
-    print("Total belanja :", float(hargatotal))
-    break
+ntotal = 0
+for i in range(len(harga)):
+    ntotal += harga[i]
+print("Total belanja :", float(ntotal))
 
 # ===================================================================================
 # no 2
-daftar = ['RotiNaga', 'SupElf', 'RotiNaga', 'SupElf', 'RotiNaga', 'JusPhoenix']
+daftar = ['Roti Naga', 'Sup Elf', 'Roti Naga', 'Sup Elf', 'Roti Naga', 'Jus Phoenix']
 
 palingMenu = ""
 jumlahTerbanyak = 0 
@@ -20,12 +17,12 @@ for item in set(daftar):
     if daftar.count(item) > jumlahTerbanyak:
         jumlahTerbanyak = daftar.count(item)
         palingMenu = item
-
-print(palingMenu)
+        x = "".join(palingMenu.split(" ")) #split() tanpa parameter memisahkan string berdasarkan spasi, "".join() menggabungkan elemen list menjadi string
+print(x)
 
 # ===================================================================================
 # no 3
-hai = ["apple", "banana", "apple", "cherry", "banana", "apple", "date"]
+hai = ["apple", "banana", "apple", "cherry", "banana", "apple", "cherry", "orange", "orange", "apple"]
 
 unik = []
 jumlah_kemunculan = []
@@ -35,7 +32,7 @@ for i in hai:
         jumlah_kemunculan.append(hai.count(i))
 
 print(len(unik))  
-print(",".join(str, jumlah_kemunculan))  
+print(jumlah_kemunculan)
 # ===================================================================================
 # no 4
 hai = 6
