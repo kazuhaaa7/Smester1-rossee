@@ -18,7 +18,7 @@
 # 1. .append() => menambah suatu value di indeks paling akhir
 # 2. .insert() => menambah suatu value dan bisa diletakkan di mana aja
 # 3. .remove(<value dari list yang ingin dirmv >) => meremove nilai yang diinginkan pd list
-# 4. .pop() => menghapus nilai dengan indeks pd list
+# 4. .pop() => menghapus nilai dengan indeks pd list, tergantung komteks: apabila dlm data .pop() digunakan untuk mengambil data
 # 5. .extend() => untuk menggabungkan beberapa list
 # 6. del <nama var>[] => untuk mengahppus value pd list lewat indks
 # 7. .reverse() => untuk mmebalik urutan value
