@@ -59,7 +59,7 @@ else:
     print(f" pemenangnya adalah amel")
 
 
- 
+# .enumerate() untuk memasukka indeks ke variabel sementara
 
 
 
